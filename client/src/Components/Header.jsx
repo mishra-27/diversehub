@@ -5,7 +5,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import LanguageIcon from "@material-ui/icons/Language";
 import Avatar from "@material-ui/core/Avatar";
 import SearchIcon from "@material-ui/icons/Search";
-import Logo from "../images/logo.jpeg";
+import Logo from "../images/D-logo.png";
 import "../StyleSheet/Header.css";
 const Header = ({ profile }) => {
   const location = window.location.href;
@@ -34,9 +34,9 @@ const Header = ({ profile }) => {
           <NotificationsIcon />
           <h4>Notifications</h4>
         </div>
-      </div>
-      <div className="Header__center">
-        <input
+      </div> 
+     <div className="Header__center">
+       <input
           type="text"
           placeholder="Search"
           className="center__inputField"
@@ -48,7 +48,7 @@ const Header = ({ profile }) => {
           <Avatar src={profile} alt="User Profile" />
         </div>
         <LanguageIcon className="right__Icon" />
-        <button className="right-btn">Add Question</button>
+        <button className="right-btn">Add Project</button>
       </div>
     </div>
   );

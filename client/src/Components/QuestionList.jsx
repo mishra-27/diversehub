@@ -11,8 +11,8 @@ const QuestionList = () => {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    const pusher = new Pusher("53fdc8e9fe904bde24f2", {
-      cluster: "mt1",
+    const pusher = new Pusher("400553b8cec6f66e900e", {
+      cluster: "ap2",
     });
 
     const channel = pusher.subscribe("questions");

@@ -28,8 +28,8 @@
 }
 
 .current-location {
-  color: #b92b27;
-  border-bottom: 1px solid #b92b27;
+  color:  #002366;
+  border-bottom: 1px solid  #002366;
 }
 
 .Header__center {
@@ -61,6 +61,6 @@
 .right-btn {
   border-radius: 999px;
   padding: 0.1em 2em;
-  background-color: #b92b27;
+  background-color:  #002366;
   color: white;
 }

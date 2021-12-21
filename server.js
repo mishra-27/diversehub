@@ -28,7 +28,7 @@ const store = new mongoStore({
 
 app.use(
   expressSession({
-    name: "_sid",
+    name: '_bm',
     secret: process.env.session_secret,
     resave: false,
     saveUninitialized: false,

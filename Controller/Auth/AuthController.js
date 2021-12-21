@@ -51,7 +51,7 @@ class AuthController {
 
         cloudinary.uploader.upload(
           image.path,
-          { folder: `/Quoara/ProfileImage/${username}` },
+          { folder: `/diversehub/ProfileImage/${username}` },
           async (error, results) => {
             if (error) {
               console.error(error);

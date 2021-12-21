@@ -1,7 +1,7 @@
-# Quora-Clone
-This is a Quora clone built of MERN Stack 
+# DIVERSE HUB
+This is a Diverse Hub built of MERN Stack 
 
-## Desired Features:
+## Current Features:
 
 - [ ] Authentication
   - [ ] Signup
@@ -14,6 +14,4 @@ This is a Quora clone built of MERN Stack
 
 - [ ] User gets notified when his/her question is answered
 - [ ] Making web app realtime
-
-## Current Features:
 

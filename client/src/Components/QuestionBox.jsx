@@ -5,7 +5,7 @@ import axios from "axios";
 const QuestionBox = ({ profile, auth_status }) => {
   const [question, setQuestion] = useState("");
 
-  const AskQuestion = async () => {
+  const AddApproach = async () => {
     const form_data = new FormData();
     form_data.append("question", question);
 
@@ -26,12 +26,12 @@ const QuestionBox = ({ profile, auth_status }) => {
     <div className="QuestionBox">
       <div className="QuestionBox__user">
         <Avatar src={profile} alt="User Profile" />
-        <h4 className="user__username">Junior</h4>
+        <h4 className="user__username">Anonymous</h4>
       </div>
       <div className="QuestionBox__inputField">
         <input
           type="text"
-          placeholder="What is your question"
+          placeholder="Show us what you got"
           className="QuestionBox__inputField"
           onChange={(e) => setQuestion(e.target.value)}
           value={question}
@@ -39,9 +39,9 @@ const QuestionBox = ({ profile, auth_status }) => {
         <button
           disabled={auth_status === true ? false : true}
           className="QuestionBox__btn"
-          onClick={AskQuestion}
+          onClick={AddApproach}
         >
-          Ask Question
+          Add Idea
         </button>
       </div>
     </div>

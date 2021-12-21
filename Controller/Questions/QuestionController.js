@@ -4,10 +4,10 @@ import Pusher from "pusher";
 import mongoose from "mongoose";
 
 const pusher = new Pusher({
-  appId: "1118677",
-  key: "53fdc8e9fe904bde24f2",
-  secret: "e2e9734b997cb6c25afc",
-  cluster: "mt1",
+  appId: "1319727",
+  key: "400553b8cec6f66e900e",
+  secret: "3c007f53f86b44e06f92",
+  cluster: "ap2",
   useTLS: true,
 });
 
@@ -43,7 +43,7 @@ class QuestionController {
         if (!question) {
           return response
             .status(400)
-            .json({ msg: "A question has be to be asked" });
+            .json({ msg: "An idea has to be uploaded." });
         }
 
         const userSession = request.session.user || false;
