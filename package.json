@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "diverse hub",
   "main": "server.js",
-  "repository": "https://github.com/Ntshembo-Hlongwane1/Quora-Clone.git",
-  "author": "Ntshembo <juniorWebProjects@gmail.com>",
+  "repository": "https://github.com/mishra-27/diversehub.git",
+  "author": "99bhawanamishra@gmail.com",
   "license": "MIT",
   "scripts": {
     "start": "babel-node server.js",
