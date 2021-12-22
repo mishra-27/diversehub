@@ -7,7 +7,7 @@
   "author": "99bhawanamishra@gmail.com",
   "license": "MIT",
   "scripts": {
-    "start": "npx babel-node server.js",
+    "start": "babel-node server.js",
     "dev": "nodemon --exec npx babel-node server.js"
   },
   "dependencies": {
