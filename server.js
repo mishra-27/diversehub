@@ -12,11 +12,10 @@ const app = express();
 
 //=====================================================Middlewares======================================================
 app.use(
-  // cors({
-  //   origin: "http://localhost:3000",
-  //   credentials: true,
-  // })
-  cors()
+  cors({
+    origin: (o, c) => c(null, true),
+    credentials: true,
+  })
 );
 
 const mongoStore = MongoStore(expressSession);
