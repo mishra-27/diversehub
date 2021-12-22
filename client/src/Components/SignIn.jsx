@@ -58,7 +58,7 @@ export default function SignIn() {
     form_data.append("username", username);
     form_data.append("password", password);
 
-    const url = `${SERVER_URL}/api/user-signin`;
+    const url = `${SERVER_URL}api/user-signin`;
 
     try {
       const response = await axios.post(url, form_data, {
