@@ -11,6 +11,7 @@
     "dev": "nodemon --exec npx babel-node server.js"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-node": "^0.0.1-security",
     "bcrypt": "^5.0.0",
     "cloudinary": "^1.23.0",
