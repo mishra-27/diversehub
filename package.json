@@ -22,13 +22,13 @@
     "express-session": "^1.17.2",
     "formidable": "^1.2.2",
     "mongoose": "^5.10.16",
-    "pusher": "^4.0.2"
-  },
-  "devDependencies": {
+    "pusher": "^4.0.2",
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",
     "@babel/node": "^7.16.5",
-    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.6"
   },
   "engines": {
