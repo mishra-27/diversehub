@@ -11,6 +11,7 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { SERVER_URL } from "../constants";
 
 function Copyright() {
   return (
@@ -58,7 +59,7 @@ export default function SignUp() {
     form_data.append("password", password);
     form_data.append("image", image);
 
-    const url = "http://localhost:5000/api/user-signup";
+    const url = `${SERVER_URL}api/user-signup`;
 
     try {
       const response = await axios.post(url, form_data, {

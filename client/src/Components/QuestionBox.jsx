@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import "../StyleSheet/QuestionBox.css";
 import axios from "axios";
+import { SERVER_URL } from "../constants";
 const QuestionBox = ({ profile, auth_status }) => {
   const [question, setQuestion] = useState("");
 
@@ -9,7 +10,7 @@ const QuestionBox = ({ profile, auth_status }) => {
     const form_data = new FormData();
     form_data.append("question", question);
 
-    const url = "http://localhost:5000/api/ask-question";
+    const url = SERVER_URL;
 
     try {
       const response = await axios.post(url, form_data, {

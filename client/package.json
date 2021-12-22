@@ -42,6 +42,8 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.3",
     "lite-server": "^2.6.1"
   }
 }

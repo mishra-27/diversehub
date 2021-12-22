@@ -7,12 +7,14 @@ import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
 import axios from "axios";
 import QuestionList from "./Components/QuestionList";
+import { SERVER_URL } from './constants';
+
 const App = () => {
   const [auth_status, setAuthStatus] = useState(false);
   const [profile, setImage] = useState(null);
 
   useEffect(() => {
-    const url = "http://localhost:5000/api/isUserLoggedIn";
+    const url = `${SERVER_URL}api/isUserLoggedIn`;
     axios
       .get(url, { withCredentials: true })
       .then((response) => {

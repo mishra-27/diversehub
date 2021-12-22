@@ -6,6 +6,7 @@ import axios from "axios";
 import Avatar from "@material-ui/core/Avatar";
 import "../StyleSheet/QuestionLIst.css";
 import Pusher from "pusher-js";
+import { SERVER_URL } from "../constants";
 
 const QuestionList = () => {
   const [questions, setQuestions] = useState([]);
@@ -27,7 +28,7 @@ const QuestionList = () => {
   }, [questions]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/api/all-questions";
+    const url = `${SERVER_URL}api/all-questions`;
 
     axios
       .get(url, { withCredentials: true })
@@ -40,7 +41,7 @@ const QuestionList = () => {
   });
 
   const Dislike = (ID) => {
-    const url = "http://localhost:5000/api/dislike";
+    const url = `${SERVER_URL}api/dislike`;
 
     const data = new FormData();
     data.append("id", ID);
@@ -55,7 +56,7 @@ const QuestionList = () => {
       });
   };
   const Like = (ID) => {
-    const url = "http://localhost:5000/api/likes";
+    const url = `${SERVER_URL}api/likes`;
 
     const data = new FormData();
     data.append("id", ID);
